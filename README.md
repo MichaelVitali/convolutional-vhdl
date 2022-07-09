@@ -16,7 +16,6 @@ parallelizzazione, su 8 bit, del flusso continuo yk.
 
 ![alt text](https://github.com/MichaelVitali/convolutional-vhdl/blob/main/images/convolutional.jpg?raw=true)
 
-
 La lunghezza del flusso U è 8*W, mentre la lunghezza del flusso Y è 8*W*2 (Z=2*W).
 Il convolutore è una macchina sequenziale sincrona con un clock globale e un segnale di
 reset con il seguente diagramma degli stati che ha nel suo 00 lo stato iniziale, con uscite in
@@ -27,11 +26,9 @@ ordine P1K, P2K.
 ![alt text](https://github.com/MichaelVitali/convolutional-vhdl/blob/main/images/state_machine_convolutional.jpg?raw=true)
 
 <h3>Interfaccia del componente</h3>
-
-Il componente da descrivere deve avere la seguente interfaccia:<br>
-<h4>
-entity project_reti_logiche is<br>
-port (</h4><br>
+Il componente da descrivere deve avere la seguente interfaccia:
+<h4>entity project_reti_logiche is<br>
+port (</h4>
 - i_clk : in std_logic;<br>
 - i_rst : in std_logic;<br>
 - i_start : in std_logic;<br>
