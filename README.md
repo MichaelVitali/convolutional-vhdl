@@ -12,7 +12,10 @@ con 2 bit) secondo lo schema riportato in figura; questa operazione genera in us
 flusso continuo Y. Il flusso Y è ottenuto come concatenamento alternato dei due bit di uscita.
 Utilizzando la notazione riportata in figura, il bit uk genera i bit p1k e p2k che sono poi
 concatenati per generare un flusso continuo yk (flusso da 1 bit). La sequenza d’uscita Z è la
-parallelizzazione, su 8 bit, del flusso continuo yk.<br>
+parallelizzazione, su 8 bit, del flusso continuo yk.
+
+![alt text](https://github.com/MichaelVitali/convolutional-vhdl/blob/master/images/convolutional.jpg?raw=true)
+
 La lunghezza del flusso U è 8*W, mentre la lunghezza del flusso Y è 8*W*2 (Z=2*W).
 Il convolutore è una macchina sequenziale sincrona con un clock globale e un segnale di
 reset con il seguente diagramma degli stati che ha nel suo 00 lo stato iniziale, con uscite in
