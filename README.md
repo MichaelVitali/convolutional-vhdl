@@ -28,17 +28,19 @@ ordine P1K, P2K.
 
 <h3>Interfaccia del componente</h3>
 
-Il componente da descrivere deve avere la seguente interfaccia.<br>
+Il componente da descrivere deve avere la seguente interfaccia:<br>
+<h4>
 entity project_reti_logiche is<br>
-port (<br>
-i_clk : in std_logic;<br>
-i_rst : in std_logic;<br>
-i_start : in std_logic;<br>
-i_data : in std_logic_vector(7 downto 0);<br>
-o_address : out std_logic_vector(15 downto 0);<br>
-o_done : out std_logic;<br>
-o_en : out std_logic;<br>
-o_we : out std_logic;<br>
-o_data : out std_logic_vector (7 downto 0)<br>
+port (</h4><br>
+- i_clk : in std_logic;<br>
+- i_rst : in std_logic;<br>
+- i_start : in std_logic;<br>
+- i_data : in std_logic_vector(7 downto 0);<br>
+- o_address : out std_logic_vector(15 downto 0);<br>
+- o_done : out std_logic;<br>
+- o_en : out std_logic;<br>
+- o_we : out std_logic;<br>
+- o_data : out std_logic_vector (7 downto 0)<br>
+<h4>
 );<br>
-end project_reti_logiche;<br>
+end project_reti_logiche;</h4><br>
